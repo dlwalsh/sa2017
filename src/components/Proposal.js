@@ -31,7 +31,7 @@ class Proposal extends Component {
 
   loadMap(data) {
     const map = L.map(this.mapRef, {
-      center: [-37, 145],
+      center: [-35, 138],
       zoom: 7,
     });
 

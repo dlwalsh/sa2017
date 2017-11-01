@@ -19,7 +19,7 @@ class Map extends Component {
   }
 
   componentDidMount() {
-    fetch('/data/vic.topojson')
+    fetch('/data/sa.topojson')
       .then(response => response.json())
       .then(json => this.setState({
         geodata: json,
@@ -53,7 +53,7 @@ class Map extends Component {
   loadMap(data) {
     const component = this;
     const map = L.map(this.mapRef, {
-      center: [-37, 145],
+      center: [-35, 138],
       zoom: 7,
     });
     const areaGeo = topojson.feature(data, data.objects.sa1);
