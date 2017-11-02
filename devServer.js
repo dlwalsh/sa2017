@@ -38,7 +38,7 @@ app.get('/data/:resource', (req, res) => {
   res.sendFile(path.join(__dirname, 'data', req.params.resource));
 });
 
-app.listen(3000, 'localhost', (err) => {
+app.listen(5000, 'localhost', (err) => {
   if (err) {
     console.log(err);
     return;
